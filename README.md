@@ -37,3 +37,8 @@ The general way that we handled work on the datasets, was to define first our re
 
 # Airflow
 The dag folder contains the dag for pipline ccleaning and merging, The path in the dags need to be renamed to work
+
+# Running the project
+First, run the cleaning files(country_cleaning, life_cleaninf,..etc)
+Second, run the integration file.
+Third run the research questions files to see the insights.
