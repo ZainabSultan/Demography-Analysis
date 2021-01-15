@@ -27,7 +27,7 @@ The general way that we handled work on the datasets, was to define first our re
 
 # Data exploration questions:
 
-1. What affects the happiness of developing and developed countries the most? Comparison of how much the factors impact happiness in this 2 categories over from 2015 => 2019.
+1. What affects the happiness of developing and developed countries the most? Comparison of how much the factors impact happiness in the 2 categories.
 2. What is the difference in immunization trends in developing VS developed countries? Study of how do the immunization strategies affect the life of individuals.
 3. How does the healthcare quality change across different regions and subregions? 
 4. How does life expectancy in each region change across the years? This gives us insights about how general health changes across years.
@@ -35,10 +35,22 @@ The general way that we handled work on the datasets, was to define first our re
 6. How does density affect happiness? Density is population divided by area and it represents how much a country is packed
 
 
-# Airflow
-The dag folder contains the dag for pipline ccleaning and merging, The path in the dags need to be renamed to work
-
 # Running the project
 First, run the cleaning files(country_cleaning, life_cleaninf,..etc)
 Second, run the integration file.
 Third run the research questions files to see the insights.
+
+# Airflow:
+Airflow implemented with the help of helper functions in class helper.
+2 dags were implemeted:
+first one is a pipline for cleaning and integrating the data for the research questions quering.
+Second one is for scrapping tweets and applying sentiment analysis on it.
+
+## Pipline 
+uses 4 opreaters, 3 for cleaning each dataset and the last one for integrating it for the questions
+
+## Twitter_Pipline
+usues 2 opreaters one for each country to scrap the tweets and applying sentiment analysis on it. Then saving it in a csv file for getting insights.
+
+Note: You need to change the path in Airflow for it to work.
+Note: You need to have an env file to run the twitter pipline.
