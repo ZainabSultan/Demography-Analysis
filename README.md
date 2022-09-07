@@ -46,11 +46,11 @@ Airflow implemented with the help of helper functions in class helper.
 first one is a pipline for cleaning and integrating the data for the research questions quering.
 Second one is for scrapping tweets and applying sentiment analysis on it.
 
-## Pipline 
+## Pipeline 
 uses 4 opreaters, 3 for cleaning each dataset and the last one for integrating it for the questions
 
-## Twitter_Pipline
-usues 2 opreaters one for each country to scrap the tweets and applying sentiment analysis on it. Then saving it in a csv file for getting insights.
+## Twitter_Pipeline
+usues 2 operators one for each country to scrap the tweets and applying sentiment analysis on it. Then saving it in a csv file for getting insights.
 
 Note: You need to change the path in Airflow for it to work.
 Note: You need to have an env file to run the twitter pipline.
